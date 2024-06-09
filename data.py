@@ -3,6 +3,7 @@ import time
 import csv
 
 py_serial = serial.Serial(
+    # Change this to your own port
     port='COM9',
     baudrate=115200,
 )

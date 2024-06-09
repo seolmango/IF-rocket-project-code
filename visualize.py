@@ -1,20 +1,23 @@
 import csv
 import matplotlib.pyplot as plt
 
+# Constants
+start_time = 0.0
+g = 9.81
+
+# Data Calibration Factor
 zero = -8486.84
 mass = 0.235
-
-g = 9.81
 rocket = -8990.62
-start_time = 0.0
-
 cali = (rocket-zero)/(mass*g)
 print(cali)
 
+# Data Loading
 with open('20240608_노즐 분사data.csv', 'r', newline='') as f:
     reader = csv.reader(f)
     datas = [row for row in reader]
 
+# Data Preprocessing
 datas = datas[2200:2600]
 start_time = float(datas[0][0])
 datas = [[float(data[0]), float(data[1])] for data in datas]
