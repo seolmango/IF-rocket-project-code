@@ -4,7 +4,7 @@
 
 ## 추력 테스트 장치
 
-* [아두이도 업로드 코드](Load cell upload code/collectData.ino)
+* [아두이도 업로드 코드](Load%20cell%20upload%20code/collectData.ino)
 
 collectData.ino는 추력 테스트 장치의 아두이노에 업로드하는 코드입니다. 사용하는 추력 테스트 장치는 로드셀과 아두이노를 연결하여 사용하는 중입니다. 
 
