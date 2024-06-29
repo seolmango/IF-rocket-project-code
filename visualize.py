@@ -17,18 +17,20 @@ def create_dir(path, delete=False):
 start_time = 0.0
 G_CONSTANT = 9.81
 
-# Data Calibration Factor
+# Edit the following constants
 ZERO_DATA = -8486.84
 ROCKET_MASS = 0.235
 ROCKET_DATA = -8990.62
 ROCKET_END_DATA = -8787.86
 LOOK_START = 2200
 LOOK_END = 2600
+DATA_TITLE = '2024-06-08 Nozzle Test'
+FILE_PATH = 'data/20240608_노즐 분사data.csv'
 calibrationFactor = (ROCKET_DATA-ZERO_DATA)/(ROCKET_MASS*G_CONSTANT)
 print(f"calibration factor:{calibrationFactor}")
 
 # Data Loading
-with open('data/20240608_노즐 분사data.csv', 'r', newline='') as f:
+with open(FILE_PATH, 'r', newline='') as f:
     reader = csv.reader(f)
     row_datas = [row for row in reader]
 row_datas = [[float(data[0]), float(data[1])] for data in row_datas[1:]]
@@ -74,7 +76,6 @@ print(f"rocket Max-height:{max([data[1] for data in position_datas]):.3f} m")
 # 1. full force-time graph
 # 2. force-time graph for a specific time range
 fig, ax = plt.subplots(2,2, figsize=(20,10))
-DATA_TITLE = '2024-06-08 Nozzle Test'
 fig.suptitle(DATA_TITLE, fontsize=16)
 ax1 = ax[0,0]
 ax2 = ax[0,1]
