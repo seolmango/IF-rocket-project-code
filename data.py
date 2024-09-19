@@ -4,7 +4,7 @@ import csv
 
 py_serial = serial.Serial(
     # Change this to your own port
-    port='COM9',
+    port='COM3',
     baudrate=115200,
 )
 
