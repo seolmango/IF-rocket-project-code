@@ -18,14 +18,14 @@ start_time = 0.0
 G_CONSTANT = 9.81
 
 # Edit the following constants
-ZERO_DATA = -8486.84
+ZERO_DATA = -8519.54
 ROCKET_MASS = 0.235
 ROCKET_DATA = -8990.62
 ROCKET_END_DATA = -8787.86
-LOOK_START = 2200
-LOOK_END = 2600
-DATA_TITLE = '2024-06-08 Nozzle Test'
-FILE_PATH = 'data/20240608_노즐 분사data.csv'
+LOOK_START = 100
+LOOK_END = 150
+DATA_TITLE = 'Dummy Data Test'
+FILE_PATH = 'data.csv'
 calibrationFactor = (ROCKET_DATA-ZERO_DATA)/(ROCKET_MASS*G_CONSTANT)
 print(f"calibration factor:{calibrationFactor}")
 
