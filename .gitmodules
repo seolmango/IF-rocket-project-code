@@ -1,0 +1,3 @@
+[submodule "Load cell upload code/collectData/src"]
+	path = Load cell upload code/collectData/src
+	url = https://github.com/seolmango/HX711.git
