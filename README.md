@@ -17,7 +17,7 @@ collectData.ino는 추력 테스트 장치의 아두이노에 업로드하는 �
 * [데이터 수집 코드](data.py)
 
 data.py는 아두이노가 Serial 통신을 통해 보내주는 값을 저장하는 코드입니다. **아두이노 ide 시리얼 모니터가 켜져있으면 에러가 발생합니다** 코드가 작성중일 때 Ctrl+C를 눌러 정지시키면 값을 자동으로 data.csv에 저장합니다. 
-데이터는 time과 row_data 로 구성되어 있습니다. 전체 예시는 [이 파일](example/data.csv)를 참고하세요.
+데이터는 time과 row_data 로 구성되어 있습니다. 전체 예시는 [이 파일](example/example.csv)를 참고하세요.
 
 ```csv
 time,raw_data
@@ -35,7 +35,7 @@ time,raw_data
 1726790052.195981,-8573.88
 ```
 
-예시 파일은 []
+예시 파일은 [이 파일](example/example.csv)을 참고하세요.
 
 * [데이터 시각화 코드](visualize.py)
 

@@ -1,4 +1,4 @@
-#include "HX711.h"
+#include "custom-library/HX711.h"
 
 // HX711 circuit wiring
 const int LOADCELL_DOUT_PIN = 5;  // 디지털핀 5번
